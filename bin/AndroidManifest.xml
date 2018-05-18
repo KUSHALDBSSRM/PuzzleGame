@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.puzzle8"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".welcome"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    <activity
+            android:name=".PuzzleActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.puzzle8.PuzzleActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rating"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.puzzle8.rating" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".credits"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.puzzle8.credits" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                
+<activity
+            android:name=".original"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.puzzle8.original" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+      <activity android:name=".Preference"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+            
+        </activity>
+
+    
+    </application>
+
+</manifest>
